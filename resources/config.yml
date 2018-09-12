@@ -1,4 +1,11 @@
 # Default Config File for discord-pmmp
+# https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+
+# Sample
+# send: true
+# webhook: "https://discordapp.com/api/webhooks/123456789123456/fgnaobgaobg"
+# username: "Minecraft"
+# avatarurl "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
 
 onlinemessage:
   send: false
