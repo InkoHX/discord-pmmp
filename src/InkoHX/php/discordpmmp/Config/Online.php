@@ -14,7 +14,7 @@ class Online
     /**
      * @return bool
      */
-    public static function SendEmbed(): bool
+    public static function getOption(): bool
     {
         $data = DataFile::getOnlineSetting();
         return $data['send'];
