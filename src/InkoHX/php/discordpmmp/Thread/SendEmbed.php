@@ -27,13 +27,13 @@ class SendEmbed extends Thread
      */
     public function __construct(string $webhook, string $title, string $field, string $value, int $color = 16777215, string $username = "InkoHX", string $avatarurl = "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4")
     {
-        self::$webhook = $webhook;
-        self::$title = $title;
-        self::$field = $field;
-        self::$value = $value;
-        self::$color = $color;
-        self::$username = $username;
-        self::$avatarurl = $avatarurl;
+        static::$webhook = $webhook;
+        static::$title = $title;
+        static::$field = $field;
+        static::$value = $value;
+        static::$color = $color;
+        static::$username = $username;
+        static::$avatarurl = $avatarurl;
     }
 
     public function run()
@@ -92,18 +92,18 @@ class SendEmbed extends Thread
             }
         }
 
-        post(self::$webhook, json_encode([
-            "avatar_url" => self::$avatarurl,
-            "username" => self::$username,
+        post(static::$webhook, json_encode([
+            "avatar_url" => static::$avatarurl,
+            "username" => static::$username,
             "embeds" => [
                 [
-                    "title" => self::$title,
+                    "title" => static::$title,
                     "type" => "rich",
-                    "color" => self::$color,
+                    "color" => static::$color,
                     "fields" => [
                         [
-                            "name" => self::$field,
-                            "value" => self::$value,
+                            "name" => static::$field,
+                            "value" => static::$value,
                             "inline" => false
                         ]
                     ],

@@ -19,7 +19,7 @@ class Main extends PluginBase
 
     public function onLoad()
     {
-        self::$instance = $this;
+        static::$instance = $this;
         $this->saveDefaultConfig();
     }
 
