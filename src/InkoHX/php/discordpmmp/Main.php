@@ -9,6 +9,7 @@
 namespace InkoHX\php\discordpmmp;
 
 
+use InkoHX\php\discordpmmp\Event\PlayerChat;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase
@@ -25,10 +26,18 @@ class Main extends PluginBase
     public function onEnable()
     {
         Discord::SendOnlineEmbed();
+        $this->registerEvents();
     }
 
     public function onDisable()
     {
         Discord::SendOfflineEmbed();
+    }
+
+    private function registerEvents(): self
+    {
+        $plm = $this->getServer()->getPluginManager();
+        $plm->registerEvents(new PlayerChat(), $this);
+        return $this;
     }
 }
