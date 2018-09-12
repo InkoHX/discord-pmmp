@@ -15,7 +15,7 @@ whitelistmessage:
   webhook: ""
   username: "InkoHX"
   avatarurl: "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
-sendserverchat:
+serverchat:
   send: false
   webhook: ""
   username: "InkoHX"
