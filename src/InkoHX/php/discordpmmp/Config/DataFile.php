@@ -49,6 +49,14 @@ class DataFile
     /**
      * @return array
      */
+    public static function getServerChatSetting(): array
+    {
+        return Main::$instance->getConfig()->get('serverchat');
+    }
+
+    /**
+     * @return array
+     */
     public static function getEmbedSetting(): array
     {
         return Main::$instance->getConfig()->get('embed');
