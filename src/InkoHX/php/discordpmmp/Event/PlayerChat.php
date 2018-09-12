@@ -9,6 +9,7 @@
 namespace InkoHX\php\discordpmmp\Event;
 
 
+use InkoHX\php\discordpmmp\Discord;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 
@@ -16,6 +17,6 @@ class PlayerChat implements Listener
 {
     public function event(PlayerChatEvent $event): void
     {
-
+        Discord::SendServerChat($message = "**" . $event->getPlayer()->getName() . "** >> " . $event->getMessage());
     }
 }
