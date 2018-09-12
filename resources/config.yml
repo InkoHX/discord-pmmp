@@ -3,32 +3,44 @@
 onlinemessage:
   send: false
   webhook: ""
+  username: "InkoHX"
+  avatarurl: "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
 offlinemessage:
   send: false
   webhook: ""
+  username: "InkoHX"
+  avatarurl: "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
 whitelistmessage:
   send: false
   webhook: ""
+  username: "InkoHX"
+  avatarurl: "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
 sendserverchat:
   send: false
   webhook: ""
+  username: "InkoHX"
+  avatarurl: "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4"
 
 # Embed
 embed:
   online:
-    title: "ONLINE"
-    message: "Server opend"
+    title: "SERVER STATUS"
+    field: "ONLINE"
+    value: "Server opend"
     color: 65280
   offline:
-    title: "OFFLINE"
-    message: "Server closed"
+    title: "SERVER STATUS"
+    field: "OFFLINE"
+    value: "Server closed"
     color: 16711680
   whitelist:
     enable:
-      title: "WHITELIST"
-      message: "Whitelist enable"
+      title: "SERVER STATUS"
+      field: "WHITELIST"
+      value: "Whitelist enable"
       color: 16776960
     disable:
-      title: "WHITELIST"
-      message: "Whitelist disable"
+      title: "SERVER STATUS"
+      field: "WHITELIST"
+      value: "Whitelist disable"
       color: 10026752
