@@ -25,7 +25,7 @@ class SendEmbed extends Thread
      * @param string $username
      * @param string $avatarurl
      */
-    public function __construct(string $webhook, string $title, string $field, string $value, int $color = 15, string $username = "InkoHX", string $avatarurl = "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4")
+    public function __construct(string $webhook, string $title, string $field, string $value, int $color = 16777215, string $username = "InkoHX", string $avatarurl = "https://avatars1.githubusercontent.com/u/33122816?s=460&v=4")
     {
         self::$webhook = $webhook;
         self::$title = $title;
