@@ -14,6 +14,18 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase
 {
+    const START = "
+    §3____  _                       _ §b____  __  __ __  __ ____  
+    §3|  _ \(_)___  ___ ___  _ __ __| |§b  _ \|  \/  |  \/  |  _ \ 
+    §3| | | | / __|/ __/ _ \| '__/ _` |§b |_) | |\/| | |\/| | |_) |
+    §3| |_| | \__ \ (_| (_) | | | (_| |§b  __/| |  | | |  | |  __/ 
+    §3|____/|_|___/\___\___/|_|  \__,_|§b_|   |_|  |_|_|  |_|_|    
+
+                    §aLICENSE§7: §cMIT
+                     §bDev§7: InkoHX
+           GitHub: https://long.inkohx.xyz/GitHub
+                 
+    ";
     /* @var Main */
     public static $instance;
 
@@ -27,6 +39,7 @@ class Main extends PluginBase
     {
         Discord::SendOnlineEmbed();
         $this->registerEvents();
+        $this->getLogger()->info(static::START);
     }
 
     public function onDisable()
