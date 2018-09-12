@@ -6,7 +6,7 @@
  * Time: 12:34
  */
 
-namespace InkoHX\php\discordpmmp;
+namespace InkoHX\php\discordpmmp\Config;
 
 
 class Setting

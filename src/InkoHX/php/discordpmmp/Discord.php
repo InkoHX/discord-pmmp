@@ -9,6 +9,8 @@
 namespace InkoHX\php\discordpmmp;
 
 
+use InkoHX\php\discordpmmp\Config\Setting;
+
 class Discord
 {
     public static function SendOnlineEmbed()

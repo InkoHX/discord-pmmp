@@ -6,8 +6,10 @@
  * Time: 11:54
  */
 
-namespace InkoHX\php\discordpmmp;
+namespace InkoHX\php\discordpmmp\Config;
 
+
+use InkoHX\php\discordpmmp\Main;
 
 class DataFile
 {
