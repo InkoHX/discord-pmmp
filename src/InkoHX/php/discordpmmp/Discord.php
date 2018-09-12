@@ -25,5 +25,7 @@ class Discord
     public static function SendOfflineEmbed(): void
     {
         if (!Offline::getOption()) return;
+        $send = new SendEmbed(Offline::getWebhookURL(), Offline::getTitle(), Offline::getField(), Offline::getValue(), Offline::getColor(), Offline::getUsername(), Offline::getAvatarURL());
+        $send->start();
     }
 }

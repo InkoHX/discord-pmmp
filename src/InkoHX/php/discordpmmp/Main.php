@@ -29,5 +29,6 @@ class Main extends PluginBase
 
     public function onDisable()
     {
+        Discord::SendOfflineEmbed();
     }
 }
