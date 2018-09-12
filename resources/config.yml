@@ -1,0 +1,34 @@
+# Default Config File for discord-pmmp
+
+onlinemessage:
+  send: false
+  webhook: ""
+offlinemessage:
+  send: false
+  webhook: ""
+whitelistmessage:
+  send: false
+  webhook: ""
+sendserverchat:
+  send: false
+  webhook: ""
+
+# Embed
+embed:
+  online:
+    title: "ONLINE"
+    message: "Server opend"
+    color: 65280
+  offline:
+    title: "OFFLINE"
+    message: "Server closed"
+    color: 16711680
+  whitelist:
+    enable:
+      title: "WHITELIST"
+      message: "Whitelist enable"
+      color: 16776960
+    disable:
+      title: "WHITELIST"
+      message: "Whitelist disable"
+      color: 10026752
