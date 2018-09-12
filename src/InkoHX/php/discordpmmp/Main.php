@@ -23,7 +23,7 @@ class Main extends PluginBase
 
                     §aLICENSE§7: §cMIT
                      §bDev§7: InkoHX
-           GitHub: https://long.inkohx.xyz/GitHub
+         GitHub: https://long.inkohx.xyz/GitHub
                  
     ";
     /* @var Main */
