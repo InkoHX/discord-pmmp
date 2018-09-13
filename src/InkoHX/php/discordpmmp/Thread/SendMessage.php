@@ -10,7 +10,6 @@ namespace InkoHX\php\discordpmmp\Thread;
 
 
 use pocketmine\Thread;
-use pocketmine\utils\Internet;
 use pocketmine\utils\InternetException;
 
 class SendMessage extends Thread
@@ -34,7 +33,7 @@ class SendMessage extends Thread
 
     public function run()
     {
-        Internet::postURL(static::$webhook, json_encode([
+        static::post(static::$webhook, json_encode([
             "username" => static::$username,
             "avatar_url" => static::$avatarurl,
             "content" => static::$message
