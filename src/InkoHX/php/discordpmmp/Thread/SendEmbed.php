@@ -9,7 +9,6 @@
 namespace InkoHX\php\discordpmmp\Thread;
 
 use pocketmine\Thread;
-use pocketmine\utils\Internet;
 use pocketmine\utils\InternetException;
 
 class SendEmbed extends Thread
@@ -39,7 +38,7 @@ class SendEmbed extends Thread
 
     public function run()
     {
-        Internet::postURL(static::$webhook, json_encode([
+        static::post(static::$webhook, json_encode([
             "avatar_url" => static::$avatarurl,
             "username" => static::$username,
             "embeds" => [
