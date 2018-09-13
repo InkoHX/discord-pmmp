@@ -1,6 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/InkoHX/discord-pmmp
 branches:
 - master
+- develop
 projects:
   discord-pmmp:
     path: ""
