@@ -17,6 +17,6 @@ class PlayerChat implements Listener
 {
     public function event(PlayerChatEvent $event): void
     {
-        Discord::SendServerChat($message = "**" . $event->getPlayer()->getName() . "** >> " . $event->getMessage());
+        Discord::SendServerChat($event->getPlayer()->getName() . ": " . $event->getMessage());
     }
 }
