@@ -17,7 +17,6 @@ class PlayerJoin implements Listener
 {
     public function event(PlayerJoinEvent $event)
     {
-        $player = $event->getPlayer();
-        Discord::SendServerChat("**" . $player->getName() . "**がサーバーに参加しました。");
+        Discord::SendServerChat($event->getJoinMessage());
     }
 }

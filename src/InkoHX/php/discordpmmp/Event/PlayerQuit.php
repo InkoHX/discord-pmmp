@@ -17,7 +17,6 @@ class PlayerQuit implements Listener
 {
     public function event(PlayerQuitEvent $event)
     {
-        $player = $event->getPlayer();
-        Discord::SendServerChat("**" . $player->getName() . "**がサーバーから退出しました。");
+        Discord::SendServerChat($event->getQuitMessage());
     }
 }

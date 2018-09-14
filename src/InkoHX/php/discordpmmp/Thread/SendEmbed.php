@@ -54,8 +54,8 @@ class SendEmbed extends Thread
                         ]
                     ],
                     "footer" => [
-                        "text" => "Developed by VectorNetworkProject",
-                        "icon_url" => "https://avatars2.githubusercontent.com/u/41660146?s=200&v=4"
+                        "text" => "Developed by InkoHX",
+                        "icon_url" => "https://cdn.discordapp.com/avatars/351992405831974915/f1cc00cd87b5b513f0658b3d202277fa.jpg?size=1024"
                     ]
                 ]
             ]

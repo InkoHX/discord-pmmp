@@ -10,6 +10,7 @@ namespace InkoHX\php\discordpmmp;
 
 
 use InkoHX\php\discordpmmp\Event\PlayerChat;
+use InkoHX\php\discordpmmp\Event\PlayerDeath;
 use InkoHX\php\discordpmmp\Event\PlayerJoin;
 use InkoHX\php\discordpmmp\Event\PlayerQuit;
 use pocketmine\plugin\PluginBase;
@@ -55,6 +56,7 @@ class Main extends PluginBase
         $plm->registerEvents(new PlayerChat(), $this);
         $plm->registerEvents(new PlayerJoin(), $this);
         $plm->registerEvents(new PlayerQuit(), $this);
+        $plm->registerEvents(new PlayerDeath(), $this);
         return $this;
     }
 }
