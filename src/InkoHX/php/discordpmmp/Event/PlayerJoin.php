@@ -10,6 +10,7 @@ namespace InkoHX\php\discordpmmp\Event;
 
 
 use InkoHX\php\discordpmmp\Discord;
+use InkoHX\php\discordpmmp\Main;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 
@@ -17,6 +18,6 @@ class PlayerJoin implements Listener
 {
     public function event(PlayerJoinEvent $event)
     {
-        Discord::SendServerChat($event->getJoinMessage());
+        Discord::SendServerChat($event->getJoinMessage() . "\n " . count(Main::$instance->getServer()->getOnlinePlayers()) . "/" . Main::$instance->getServer()->getMaxPlayers());
     }
 }
