@@ -17,6 +17,6 @@ class PlayerDeath implements Listener
 {
     public function event(PlayerDeathEvent $event)
     {
-        Discord::SendServerChat($event->getDeathMessage());
+        Discord::SendServerChat($event->getPlayer()->getName() . "が死にました。");
     }
 }
