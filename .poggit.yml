@@ -2,6 +2,7 @@
 branches:
 - master
 - develop
+- linux
 projects:
   discord-pmmp:
     path: ""
