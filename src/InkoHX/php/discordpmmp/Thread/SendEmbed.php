@@ -83,7 +83,7 @@ class SendEmbed extends Thread
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_CONNECTTIMEOUT_MS => (int)(10 * 1000),
                 CURLOPT_TIMEOUT_MS => (int)(10 * 1000),
-                CURLOPT_HTTPHEADER => array_merge(["Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Thunderbird/45.3.0 " . \pocketmine\NAME], array()),
+                CURLOPT_HTTPHEADER => array_merge(["User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Thunderbird/45.3.0 " . \pocketmine\NAME], array()),
                 CURLOPT_HEADER => true
             ]);
         try {
