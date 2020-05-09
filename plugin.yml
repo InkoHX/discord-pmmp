@@ -1,4 +1,4 @@
 name: DiscordPMMP
 main: InkoHX\php\discordpmmp\Main
 api: [4.0.0, 3.0.0]
-version: 1.0.4
+version: 1.0.5
